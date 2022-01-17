@@ -49,8 +49,16 @@ const AllUsers = () => {
                     <TableCell>CRM's</TableCell>
                     <TableCell>Started</TableCell>
                     <TableCell>github</TableCell>
-                    {/* <TableCell>Githublink</TableCell> */}
-                    <TableCell></TableCell>
+                     <TableCell>deployed</TableCell>
+                     <TableCell>CRM_server_IP</TableCell>
+                     <TableCell>Elastic_server_IP</TableCell>
+                     <TableCell>CRM_database</TableCell>
+                     <TableCell>Elastic_database</TableCell> 
+                     <TableCell>CRM_directory_route</TableCell>
+                     <TableCell>Proxy_url</TableCell>
+                     <TableCell>Elastic_Queue</TableCell> 
+                     <TableCell>Updated by</TableCell>
+                     <TableCell>Updated date time</TableCell> 
                 </TableRow>
             </TableHead>
             <TableBody>
@@ -60,7 +68,18 @@ const AllUsers = () => {
                         <TableCell>{user.name}</TableCell>
                         <TableCell>{user.username}</TableCell>
                         <TableCell>{user.email}</TableCell>
-                        {/* <TableCell>{user.phone}</TableCell> */}
+                        <TableCell>{user.phone}</TableCell> 
+                        <TableCell>{user.CRM_server_IP}</TableCell> 
+                        <TableCell>{user.Elastic_server_IP}</TableCell> 
+                        <TableCell>{user.CRM_database}</TableCell> 
+                        <TableCell>{user.Elastic_database}</TableCell> 
+                        <TableCell>{user.CRM_directory_route}</TableCell> 
+                        <TableCell>{user.Proxy_url}</TableCell> 
+                        <TableCell>{user.Elastic_Queue}</TableCell> 
+                        <TableCell>{user.Updatedby}</TableCell> 
+                        <TableCell>{user.Updateddateandtime}</TableCell> 
+                        
+                         
                         <TableCell>
                             <Button color="primary" variant="contained" style={{marginRight:10}} component={Link} to={`/edit/${user._id}`}>Edit</Button> {/* change it to user.id to use JSON Server */}
                             <Button color="secondary" variant="contained" onClick={() => deleteUserData(user._id)}>Delete</Button> {/* change it to user.id to use JSON Server */}

@@ -7,7 +7,10 @@ const initialValue = {
     CRM: '',
     started: '',
     github: '',
-    // phone: ''
+    phone: '',
+    
+    
+
 }
 
 const useStyles = makeStyles({
@@ -48,13 +51,53 @@ const AddUser = () => {
                 <Input onChange={(e) => onValueChange(e)} name='username' value={username} id="my-input" />
             </FormControl>
             <FormControl>
-                <InputLabel htmlFor="my-input">githublink</InputLabel>
+                <InputLabel htmlFor="my-input">github</InputLabel>
                 <Input onChange={(e) => onValueChange(e)} name='email' value={email} id="my-input"/>
             </FormControl>
-            {/* <FormControl>
+             <FormControl> 
                 <InputLabel htmlFor="my-input">deployed</InputLabel>
                 <Input onChange={(e) => onValueChange(e)} name='phone' value={phone} id="my-input" />
-            </FormControl> */}
+            </FormControl> 
+             <FormControl> 
+                <InputLabel htmlFor="my-input">CRM_server_IP</InputLabel>
+                <Input onChange={(e) => onValueChange(e)} name='phone' value={phone} id="my-input" />
+            </FormControl> 
+            <FormControl> 
+                <InputLabel htmlFor="my-input">Elastic_server_IP</InputLabel>
+                <Input onChange={(e) => onValueChange(e)} name='phone' value={phone} id="my-input" />
+            </FormControl>
+            <FormControl> 
+                <InputLabel htmlFor="my-input">CRM_database</InputLabel>
+                <Input onChange={(e) => onValueChange(e)} name='phone' value={phone} id="my-input" />
+            </FormControl>
+            <FormControl> 
+                <InputLabel htmlFor="my-input">Elastic_database</InputLabel>
+                <Input onChange={(e) => onValueChange(e)} name='phone' value={phone} id="my-input" />
+            </FormControl>
+            <FormControl> 
+                <InputLabel htmlFor="my-input">CRM_directory_route</InputLabel>
+                <Input onChange={(e) => onValueChange(e)} name='phone' value={phone} id="my-input" />
+            </FormControl>
+            <FormControl> 
+                <InputLabel htmlFor="my-input">Proxy_url</InputLabel>
+                <Input onChange={(e) => onValueChange(e)} name='phone' value={phone} id="my-input" />
+            </FormControl>
+            <FormControl> 
+                <InputLabel htmlFor="my-input">Elastic_Prefix</InputLabel>
+                <Input onChange={(e) => onValueChange(e)} name='phone' value={phone} id="my-input" />
+            </FormControl>
+            <FormControl> 
+                <InputLabel htmlFor="my-input">Elastic_Queue</InputLabel>
+                <Input onChange={(e) => onValueChange(e)} name='phone' value={phone} id="my-input" />
+            </FormControl>
+            <FormControl> 
+                <InputLabel htmlFor="my-input">Updated by</InputLabel>
+                <Input onChange={(e) => onValueChange(e)} name='phone' value={phone} id="my-input" />
+            </FormControl>
+            <FormControl> 
+                <InputLabel htmlFor="my-input">Updated date time</InputLabel>
+                <Input onChange={(e) => onValueChange(e)} name='phone' value={phone} id="my-input" />
+            </FormControl>
             <FormControl>
                 <Button variant="contained" color="primary" onClick={() => addUserDetails()}>Add User</Button>
             </FormControl>
